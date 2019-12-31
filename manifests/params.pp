@@ -26,6 +26,7 @@ class influxdb::params {
   $data_dir                                     = '/var/lib/influxdb/data'
   $wal_dir                                      = '/var/lib/influxdb/wal'
   $wal_logging_enabled                          = true
+  $query_log_enabled                            = true
   $trace_logging_enabled                        = false
   $cache_max_memory_size                        = undef
   $cache_snapshot_memory_size                   = undef

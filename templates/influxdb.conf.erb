@@ -21,9 +21,7 @@ reporting-disabled = <%= @reporting_disabled %>
   wal-dir = "<%= @wal_dir %>"
   wal-logging-enabled = <%= @wal_logging_enabled %>
   trace-logging-enabled = <%= @trace_logging_enabled %>
-<% if @query_log_enabled -%>
-  query-log-enabled = <%@query_log_enabled %>
-<% end -%>
+  query-log-enabled = <%= @query_log_enabled %>
 <% if @cache_max_memory_size -%>
   cache-max-memory-size = <%= @cache_max_memory_size %>
 <% end -%>

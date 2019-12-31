@@ -27,6 +27,7 @@ class influxdb::server (
   $data_dir                                     = $influxdb::params::data_dir,
   $wal_dir                                      = $influxdb::params::wal_dir,
   $wal_logging_enabled                          = $influxdb::params::wal_logging_enabled,
+  $query_log_enabled                            = $influxdb::params::query_log_enabled,
   $trace_logging_enabled                        = $influxdb::params::trace_logging_enabled,
   $cache_max_memory_size                        = $influxdb::params::cache_max_memory_size,
   $cache_snapshot_memory_size                   = $influxdb::params::cache_snapshot_memory_size,

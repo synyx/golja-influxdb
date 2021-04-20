@@ -110,7 +110,7 @@ reporting-disabled = <%= @reporting_disabled %>
     "<%=template %>",
   <%- end -%>
   ]
-<% elsif val.is_a?(Array) or val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% elsif val.is_a?(Array) or val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -127,7 +127,7 @@ reporting-disabled = <%= @reporting_disabled %>
     "<%=template %>",
   <%- end -%>
   ]
-<% elsif val.is_a?(Array) or val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% elsif val.is_a?(Array) or val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -145,7 +145,7 @@ reporting-disabled = <%= @reporting_disabled %>
 [[collectd]]
 <% @collectd_options.keys.sort.each do |key| -%>
 <% val = @collectd_options[key] 
-  if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+  if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -156,7 +156,7 @@ reporting-disabled = <%= @reporting_disabled %>
 [[collectd]]
 <% option.keys.sort.each do |key| -%>
 <% val = @option[key] 
-  if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+  if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -175,7 +175,7 @@ reporting-disabled = <%= @reporting_disabled %>
 <% @opentsdb_options.keys.sort.each do |key| 
    val = @opentsdb_options[key] 
   -%>
-<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -187,7 +187,7 @@ reporting-disabled = <%= @reporting_disabled %>
 <% option.keys.sort.each do |key|
    val = @option[key]
   -%>
-<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -206,7 +206,7 @@ reporting-disabled = <%= @reporting_disabled %>
 <% @udp_options.keys.sort.each do |key| 
    val =  @udp_options[key]
    -%>
-<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
@@ -218,7 +218,7 @@ reporting-disabled = <%= @reporting_disabled %>
 <% option.keys.sort.each do |key| 
  val = option[key]
   -%>
-<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Fixnum) -%>
+<% if val =~ /^(true|false|[0-9]+)$/ or val.is_a?(TrueClass) or val.is_a?(FalseClass) or val.is_a?(Integer) -%>
   <%=key %> = <%=val %>
 <% else -%>
   <%=key %> = "<%=val %>"
